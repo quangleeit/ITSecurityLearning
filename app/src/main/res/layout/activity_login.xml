@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="48dp"
+        android:textSize="36sp"
+        android:text="SECURITY LEARNING"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Username"
+        android:ems="10"
+        android:layout_above="@+id/signInGoogle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="115dp"
+        android:id="@+id/editText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="Password"
+        android:layout_alignTop="@+id/editText"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_marginTop="50dp"
+        android:id="@+id/editText2" />
+
+    <Button
+        android:text="Sign In"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_alignEnd="@+id/editText2" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/signInGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Google"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:layout_alignEnd="@+id/button2" />
+
+    <TextView
+        android:text="Or Sign Up?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:gravity="center"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/signInGoogle"
+        android:layout_alignStart="@+id/signInGoogle"
+        android:layout_alignEnd="@+id/signInGoogle" />
+
+
+</RelativeLayout>
+
+
